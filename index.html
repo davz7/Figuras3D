@@ -10,6 +10,8 @@
 
     <!-- Tipografía moderna similar a la UTEZ -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+     <script src="js/three.min.js"></script>
+    <script src="js/figuras.js" defer></script>
 </head>
 <body>
 
@@ -36,17 +38,48 @@
         </div>
     </section>
 
-    <!-- SECCIÓN FIGURAS -->
+    <!-- CONTENEDOR DE FIGURAS 3D -->
     <section class="section">
-        <h2>Figuras Disponibles</h2>
 
         <div class="figuras-grid">
-            <div class="figura-card">Elipsoide</div>
-            <div class="figura-card">Cono Elíptico</div>
-            <div class="figura-card">Cilindro Elíptico</div>
-            <div class="figura-card">Prisma Rectangular</div>
-            <div class="figura-card">Toro</div>
+
+            <!-- ELIPSOIDE -->
+            <div class="figura-card">
+                <h3>Elipsoide</h3>
+                <div class="canvas-container" id="elipsoideCanvas"></div>
+                <a href="volumen.html" class="btn-utez">Calcular Volumen</a>
+            </div>
+
+            <!-- CONO ELÍPTICO -->
+            <div class="figura-card">
+                <h3>Cono Elíptico</h3>
+                <div class="canvas-container" id="conoElipticoCanvas"></div>
+                <a href="volumen.html" class="btn-utez">Calcular Volumen</a>
+            </div>
+
+            <!-- CILINDRO ELÍPTICO -->
+            <div class="figura-card">
+                <h3>Cilindro Elíptico</h3>
+                <div class="canvas-container" id="cilindroElipticoCanvas"></div>
+                <a href="volumen.html" class="btn-utez">Calcular Volumen</a>
+            </div>
+
+            <!-- PRISMA RECTANGULAR -->
+            <div class="figura-card">
+                <h3>Prisma Rectangular</h3>
+                <div class="canvas-container" id="prismaCanvas"></div>
+                <a href="volumen.html" class="btn-utez">Calcular Volumen</a>
+            </div>
+
+            <!-- TORO -->
+            <div class="figura-card">
+                <h3>Toro</h3>
+                <div class="canvas-container" id="toroCanvas"></div>
+                <a href="volumen.html" class="btn-utez">Calcular Volumen</a>
+            </div>
+
         </div>
+
     </section>
 
     <!-- FOOTER -->
