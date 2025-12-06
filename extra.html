@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de Volumen – UTEZ</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="js/three.min.js"></script>
+    <script src="js/extra.js" defer></script>
+
+    <style>
+        .sim-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #F3ECE0;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        #simCanvas {
+            width: 100%;
+            height: 350px;
+            background: #e8dfd1;
+            border-radius: 10px;
+        }
+
+        .input-vol {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #bfb59e;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-logo">
+            <img src="assets/logo_utez.png" alt="Logo UTEZ">
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="figuras.html">Figuras 3D</a>
+            <a href="volumen.html">Cálculo de Volumen</a>
+            <a href="extra.html" class="active">Extra</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Simulación de Volumen Llenándose</h2>
+        <p>Observa visualmente cómo se llena una figura según su volumen.</p>
+
+        <div class="sim-container">
+
+            <label><strong>Figura:</strong></label>
+            <select id="figuraSelect" class="input-vol">
+                <option value="prisma">Prisma Rectangular</option>
+                <option value="cilindro">Cilindro Elíptico</option>
+                <option value="cono">Cono Elíptico</option>
+                <option value="elipsoide">Elipsoide</option>
+                <option value="toro">Toro</option>
+            </select>
+
+            <!-- Parámetros dinámicos -->
+            <div id="parametros"></div>
+
+            <button class="btn-utez" style="width:100%;" onclick="iniciarSimulacion()">
+                Iniciar Simulación
+            </button>
+
+            <div id="simCanvas"></div>
+
+            <div id="resultadoSim" style="font-size:1.2rem; margin-top:20px;"></div>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Universidad Tecnológica Emiliano Zapata · Proyecto Integrador 3D</p>
+    </footer>
+
+</body>
+</html>

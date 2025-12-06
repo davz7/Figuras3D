@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Volumen – UTEZ</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script src="js/volumen.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-logo">
+            <img src="assets/logo_utez.png" alt="Logo UTEZ">
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="figuras.html">Figuras 3D</a>
+            <a href="volumen.html" class="active">Cálculo de Volumen</a>
+            <a href="extra.html">Extra</a>
+        </nav>
+    </header>
+
+    <section class="section">
+        <h2>Calculadora de Volúmenes</h2>
+        <p>Selecciona una figura y proporciona los valores requeridos.</p>
+
+        <!-- Selección de figura -->
+        <div style="margin: 20px auto; max-width: 400px;">
+            <label for="figuraSelect"><strong>Elige una figura:</strong></label>
+            <select id="figuraSelect" style="width: 100%; padding: 10px; margin-top: 10px;">
+                <option value="elipsoide">Elipsoide</option>
+                <option value="conoEliptico">Cono Elíptico</option>
+                <option value="cilindroEliptico">Cilindro Elíptico</option>
+                <option value="prisma">Prisma Rectangular</option>
+                <option value="toro">Toro</option>
+            </select>
+        </div>
+
+        <!-- Formulario dinámico -->
+        <div id="formContainer" style="max-width: 400px; margin: 0 auto;"></div>
+
+        <!-- Resultado -->
+        <div id="resultado" style="margin-top: 30px; font-size: 1.4rem; color:#2E4A40;"></div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Universidad Tecnológica Emiliano Zapata · Proyecto Integrador 3D</p>
+    </footer>
+
+</body>
+</html>
