@@ -189,3 +189,157 @@ body {
     border-radius: 8px;
     margin-top: 25px;
 }
+
+@media (max-width: 1200px) {
+    .section {
+        padding: 40px 30px;
+    }
+
+    .figuras-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+        max-width: 1000px;
+        gap: 18px;
+    }
+
+    .hero {
+        height: 55vh;
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Tablets vertical / pantallas pequeñas */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 12px 24px;
+    }
+
+    .figuras-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        max-width: 700px;
+        gap: 16px;
+    }
+
+    .figura-card {
+        min-height: auto;
+        padding: 20px;
+        font-size: 1.05rem;
+    }
+
+    .canvas-container {
+        height: 230px;
+    }
+
+    .section {
+        padding: 40px 24px;
+    }
+}
+
+/* responsivo */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 18px;
+    }
+
+    .nav-logo img {
+        height: 50px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        height: auto;
+        padding: 50px 18px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-utez {
+        width: 100%;
+        text-align: center;
+    }
+
+    
+    .section {
+        padding: 32px 18px;
+    }
+
+    .section h2 {
+        font-size: 1.7rem;
+    }
+
+    .figuras-grid {
+        grid-template-columns: 1fr; 
+        max-width: 480px;
+        gap: 16px;
+    }
+
+    .figura-card {
+        width: 100%;
+    }
+
+    .canvas-container {
+        height: 210px;
+    }
+
+    #formContainer {
+        margin-top: 16px;
+        padding: 20px;
+    }
+
+    #resultado {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .section {
+        padding: 26px 14px;
+    }
+
+    .figura-card {
+        padding: 18px;
+    }
+
+    .canvas-container {
+        height: 190px;
+    }
+}
